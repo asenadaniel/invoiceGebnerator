@@ -1,5 +1,5 @@
 import React from 'react'
-import MainContent from './components/mainContent'
+import MainContent from './components/MainContent'
 
 function App() {
   return (
