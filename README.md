@@ -1,12 +1,26 @@
-# React + Vite
+# Invoice Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Overview
 
-Currently, two official plugins are available:
+The Invoice Generator is a React-based application that allows users to create, manage, and download invoices in PDF format. It features a user-friendly UI with functionalities such as modifying invoices, marking them as paid, and deleting invoices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
 
-## Expanding the ESLint configuration
+Invoice Creation: Add client details, itemized lists, and due dates.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Status Tracking: Track invoices as "Paid," "Pending," or "Draft."
+
+PDF Generation: Download invoices in a professional format using react-pdf.
+
+Responsive Design: Optimized for all screen sizes.
+
+## Technologies Used
+React.js
+
+Redux Toolkit (for state management)
+
+Tailwind CSS (for styling)
+
+react-pdf (for PDF generation)
+
+date-fns (for date formatting)
