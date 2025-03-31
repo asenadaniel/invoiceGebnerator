@@ -45,13 +45,13 @@ const InvoicePDF = ({ invoice }) => (
           <View style={styles.tableRow} key={index}>
             <Text style={styles.tableCell}>{item.name}</Text>
             <Text style={styles.tableCell}>{item.quantity}</Text>
-            <Text style={styles.tableCell}>USD{item.price.toFixed(2)}</Text>
-            <Text style={styles.tableCell}>USD{item.total.toFixed(2)}</Text>
+            <Text style={styles.tableCell}>NGN {item.price.toFixed(2)}</Text>
+            <Text style={styles.tableCell}>NGN {item.total.toFixed(2)}</Text>
           </View>
         ))}
       </View>
       <View style={styles.footer}>
-        <Text>Amount Due: USD {invoice.amount.toFixed(2)}</Text>
+        <Text>Amount Due: NGN {invoice.amount.toFixed(2)}</Text>
       </View>
     </Page>
   </Document>

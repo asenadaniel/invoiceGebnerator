@@ -12,19 +12,19 @@ function Header({ toggle }) {
   const status = ['draft', 'pending', 'paid', 'all']
 
   return (
-    <div className=' flex justify-between items-center'>
+    <div className=' md:flex md:justify-between justify-center items-center mb-8 lg:mb-0'>
       <div>
-        <h1 className=' text-3xl font-bold text-white mb-2'>Invoices</h1>
+        <h1 className=' text-3xl  font-bold text-white mb-2'>Invoices</h1>
         <p>{invoices.length === 0 ? 'There are no Invoices available' : `There are ${invoices.length} Total Invoices`}</p>
       </div>
-      <div className=' flex items-center space-x-4'>
+      <div className=' flex items-center justify-between  space-x-4'>
         <Menu as='div' className='relative'>
-          <MenuButton className=' flex items-center space-x-2 text-white'>
+          <MenuButton className=' flex items-center  space-x-2 text-white'>
             <Filter size={20} />
             <span>Filter by status</span>
           </MenuButton>
 
-          <MenuItems className=' absolute right-0 w-48 mt-2 p-2 bg-slate-800 rounded-lg shadow-lg z-10'>
+          <MenuItems className=' absolute lg:right-0 w-48 mt-2 p-2 bg-slate-800 rounded-lg shadow-lg z-10'>
             {status.map((item, index) => (
               <MenuItem key={index}>
                 {({ active }) => (

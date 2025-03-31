@@ -46,7 +46,7 @@ function InvoiceList() {
       ) : (
         filteredInvoices.map((invoice) => (
           <div
-            className=' bg-slate-800 hover:bg-slate-700 p-6 rounded-lg shadow-lg flex items-center justify-between transition-colors duration-200 cursor-pointer'
+            className=' bg-slate-800 hover:bg-slate-700 p-6 rounded-lg shadow-lg md:flex items-center justify-between transition-colors duration-200 cursor-pointer'
             key={invoice.id} onClick={() => invoiceClick(invoice)}
           >
             <div className=' flex items-center space-x-4'>
@@ -55,7 +55,7 @@ function InvoiceList() {
               <span className='text-slate-300'>{invoice.clientName}</span>
             </div>
             <div className=' flex items-center space-x-4'>
-              <span className='text-2xl font-bold '>${invoice.amount?.toFixed(2)}</span>
+              <span className='lg:text-2xl font-bold '>NGN {invoice.amount?.toFixed(2)}</span>
               <div
                 className={`px-4 py-2 rounded-lg flex items-center space-x-2 ${invoice.status === 'paid'
                   ? 'bg-green-900 text-green-200'
@@ -63,7 +63,7 @@ function InvoiceList() {
                     ? 'bg-yellow-700 text-white'
                     : 'bg-slate-700 text-slate-400'}`
                 }>
-                <span className='text-2xl capitalize '>{invoice.status}</span>
+                <span className='lg:text-2xl capitalize '>{invoice.status}</span>
               </div>
               <ChevronRight className=' text-violet-500' />
             </div>
