@@ -11,10 +11,10 @@ import InvoiceData from './InvoiceData'
 function MainContent() {
 
   const { isFormOpen, selectedInvoice } = useSelector((state) => state.invoices)
-  const disapatch = useDispatch()
+  const dispatch = useDispatch()
 
   const handleToggle = () => {
-    disapatch(toggleForm())
+    dispatch(toggleForm())
   }
 
 
