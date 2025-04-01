@@ -63,6 +63,7 @@ const invoiceSlice = createSlice({
 
     setFilter: (state, action) => {
       state.filter = action.payload;
+
     },
 
     setSelectedInvoice: (state, action) => {
@@ -73,7 +74,7 @@ const invoiceSlice = createSlice({
     markAsPaid: (state, action) => {
       const invoice = state.invoices.find((invoice) => invoice.id === action.payload);
       if (invoice) {
-        invoice.status = 'paid';
+        invoice.status = 'All';
         state.selectedInvoice = null;
         state.isFormOpen = false;
         storedState(state);
